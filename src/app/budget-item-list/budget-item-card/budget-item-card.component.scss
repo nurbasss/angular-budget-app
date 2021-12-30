@@ -1,0 +1,92 @@
+@import '../../../main-styles.scss';
+
+.root{
+    display: flex;
+    width: 100%;
+    position: relative;
+
+    &:hover{
+        .x-icon-button{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .x-icon-button{
+        display: flex;
+        position: absolute;
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        background: $dark;
+        right: -17px; 
+        top: -17px;
+
+        justify-content: center;
+        align-items: center;
+
+        opacity: 0;
+        transform: scale(0);
+        transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+        cursor: pointer;
+
+        .icon{
+            color: $red;
+            width: 12px;
+        }
+
+        &:hover{
+            transform: scale(1.2);
+        }
+
+    }
+}
+
+.budget-item{
+    display: flex;
+    width: 100%;
+    background-color: $light-grey;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: 0.2s ease-in;
+    &:hover{
+        background-color: darken($color: $light-grey, $amount: 10%);
+    }
+
+    .description{
+        display: flex;
+        flex-grow: 1;
+        font-size: 18px;
+        margin-left: 5px;
+
+        //vertically center childrens
+        align-items: center;
+    }
+
+    .amount{
+        padding: 5px;
+        border-radius: 3px;
+    }
+}
+
+.expense{
+    p{
+        color: $red;
+    }
+
+    .amount{
+        background-color: $light-red;
+    }
+}
+
+.income{
+    p{
+        color: $green;
+    }
+
+    .amount{
+        background-color: $light-green;
+    }
+}
