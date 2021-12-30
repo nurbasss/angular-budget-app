@@ -1,6 +1,6 @@
 # BudgetManager
 
-##Link to demo
+## Link to demo
 https://relaxed-chandrasekhar-4d60f1.netlify.app/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
